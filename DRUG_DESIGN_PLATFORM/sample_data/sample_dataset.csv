@@ -1,0 +1,9 @@
+SMILES,Name,Activity,pIC50
+CC(=O)Oc1ccccc1C(=O)O,Aspirin,Active,2.45
+CC(C)Cc1ccc(cc1)CHC(C)C(=O)O,Ibuprofen,Active,4.89
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C,Caffeine,Active,3.21
+CC(=O)NC1=CC=C(C=C1)S(=O)O,Acetaminophen,Active,3.56
+CC1=C(C=C(C=C1)O)C(=O)O,Salicylic acid,Active,3.12
+c1ccccc1, Benzene,Inactive,0.00
+CC(C)CC(C)C(=O)O,Valeric acid,Inactive,0.50
+c1ccc(cc1)C(=O)O,Benzoic acid,Moderate,2.10

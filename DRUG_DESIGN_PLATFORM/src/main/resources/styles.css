@@ -1,0 +1,388 @@
+/* DrugCompass - Professional Scientific Theme */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables - Dark Scientific Theme */
+:root {
+    --primary-color: #1a237e;
+    --primary-light: #534bae;
+    --primary-dark: #000051;
+    --accent-color: #00bcd4;
+    --accent-light: #62efff;
+    --accent-dark: #008ba3;
+    
+    --background-dark: #121212;
+    --background-card: #1e1e1e;
+    --background-elevated: #2d2d2d;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #757575;
+    
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --error-color: #f44336;
+    --info-color: #2196f3;
+    
+    --border-color: #333333;
+    --border-radius: 8px;
+    --shadow-elevation: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-base: 14px;
+    --font-size-small: 12px;
+    --font-size-large: 16px;
+    --font-size-xlarge: 20px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.module-header {
+    padding: 20px 30px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.module-header h2 {
+    margin: 0 0 8px 0;
+    font-size: var(--font-size-xlarge);
+    font-weight: 600;
+}
+
+.header-description {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: var(--font-size-base);
+}
+
+/* Panel Styles */
+.control-panel {
+    background-color: var(--background-card);
+    border-right: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.results-panel {
+    background-color: var(--background-dark);
+    padding: 20px;
+}
+
+.config-section {
+    background-color: var(--background-elevated);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.section-title {
+    margin: 0 0 12px 0;
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-elevation);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--background-elevated) 0%, var(--background-card) 100%);
+    border: 1px solid var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-emoji {
+    font-size: 36px;
+}
+
+.tool-card {
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tool-card:hover {
+    border-color: var(--accent-color);
+    background-color: var(--background-elevated);
+}
+
+.tool-icon {
+    color: var(--accent-color);
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.ai-tool-card {
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    min-width: 280px;
+    cursor: pointer;
+}
+
+.tutorial-card {
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    min-width: 280px;
+}
+
+.tutorial-item {
+    background-color: var(--background-elevated);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.prediction-card {
+    background-color: var(--background-elevated);
+    border: 1px solid var(--accent-color);
+    padding: 16px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.result-card {
+    background: linear-gradient(135deg, var(--background-elevated) 0%, var(--background-card) 100%);
+    border: 2px solid var(--success-color);
+    padding: 24px;
+    text-align: center;
+}
+
+.large-result {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--success-color);
+}
+
+.video-card {
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    min-width: 250px;
+}
+
+.about-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border: none;
+    padding: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Viewer Panel */
+.viewer-panel {
+    background-color: var(--background-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+/* Tabs */
+.module-tabs {
+    background-color: var(--background-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 16px;
+}
+
+.tool-tabs {
+    background-color: var(--background-elevated);
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    margin: 16px;
+}
+
+/* Grid Styles */
+.grid {
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.grid::part(header-cell) {
+    background-color: var(--background-elevated);
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.grid::part(cell) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Form Fields */
+[theme~="dark"] vaadin-text-field,
+[theme~="dark"] vaadin-number-field,
+[theme~="dark"] vaadin-combo-box {
+    background-color: var(--background-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    --vaadin-text-field-background: var(--background-elevated);
+}
+
+vaadin-text-field,
+vaadin-number-field,
+vaadin-combo-box {
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+vaadin-button[theme~="primary"] {
+    background-color: var(--accent-color);
+    color: var(--background-dark);
+    font-weight: 500;
+}
+
+vaadin-button[theme~="success"] {
+    background-color: var(--success-color);
+    color: white;
+}
+
+vaadin-button[theme~="large"] {
+    padding: 16px 32px;
+    font-size: var(--font-size-large);
+}
+
+/* Progress Bar */
+vaadin-progress-bar {
+    --vaadin-progress-bar-background: var(--accent-color);
+    --vaadin-progress-bar-value-background: var(--accent-color);
+}
+
+/* Accordion / Learning */
+.learning-accordion {
+    margin-top: 16px;
+}
+
+.learning-accordion vaadin-button {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    background-color: var(--background-elevated);
+    border: 1px solid var(--border-color);
+    margin-bottom: 4px;
+    border-radius: var(--border-radius);
+}
+
+.learning-accordion vaadin-button:hover {
+    background-color: var(--primary-light);
+}
+
+.learning-accordion .accordion-content {
+    padding: 12px 16px;
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+}
+
+/* Badges */
+.level-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: var(--font-size-small);
+    margin-left: 8px;
+}
+
+/* Search Field */
+.search-field {
+    max-width: 400px;
+}
+
+/* Stats Row */
+.stats-row {
+    padding: 20px 0;
+}
+
+/* Score Card */
+.score-card {
+    background: linear-gradient(135deg, var(--background-elevated) 0%, var(--background-card) 100%);
+    border: 2px solid var(--success-color);
+    padding: 24px;
+    text-align: center;
+}
+
+.score-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--success-color);
+}
+
+/* Dashboard */
+.dashboard-view {
+    padding: 20px;
+}
+
+.dashboard-view vaadin-board-row {
+    padding: 16px 0;
+}
+
+/* NGL Viewer Iframe */
+.ngl-iframe {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-elevated);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Utility Classes */
+.text-success { color: var(--success-color); }
+.text-warning { color: var(--warning-color); }
+.text-error { color: var(--error-color); }
+.text-info { color: var(--info-color); }
+.text-muted { color: var(--text-muted); }
+.text-secondary { color: var(--text-secondary); }
+
+/* Responsive */
+@media (max-width: 1200px) {
+    vaadin-split-layout > div {
+        flex-direction: column !important;
+    }
+}
